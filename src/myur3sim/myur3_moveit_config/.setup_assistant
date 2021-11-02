@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: myur3_description
+    relative_path: urdf/myur3.urdf.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/robot.srdf
+  CONFIG:
+    author_name: Mariana E
+    author_email: mariana.elizalde@udem.edu
+    generated_timestamp: 1635738520
