@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_torso_controller
+    type: $(arg execution_type)
+    joints:
+      - shoulder_Joint
+      - Arm_Joint
+      - Forearm_Joint
+initial:  # Define initial robot poses.
+  - group: torso
+    pose: distancia
