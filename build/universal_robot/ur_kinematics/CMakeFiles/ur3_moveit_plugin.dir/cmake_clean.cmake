@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/saul/catkin_ws/devel/lib/libur3_moveit_plugin.pdb"
-  "/home/saul/catkin_ws/devel/lib/libur3_moveit_plugin.so"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libur3_moveit_plugin.pdb"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libur3_moveit_plugin.so"
   "CMakeFiles/ur3_moveit_plugin.dir/src/ur_moveit_plugin.cpp.o"
 )
 

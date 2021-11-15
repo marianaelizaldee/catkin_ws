@@ -67,14 +67,14 @@ set(moveit_resources_pr2_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(moveit_resources_pr2_description_SOURCE_PREFIX /home/saul/catkin_ws/src/moveit_resources/pr2_description)
-  set(moveit_resources_pr2_description_DEVEL_PREFIX /home/saul/catkin_ws/devel)
+  set(moveit_resources_pr2_description_SOURCE_PREFIX /mnt/c/Users/saulo/catkin_ws/src/moveit_resources/pr2_description)
+  set(moveit_resources_pr2_description_DEVEL_PREFIX /mnt/c/Users/saulo/catkin_ws/devel)
   set(moveit_resources_pr2_description_INSTALL_PREFIX "")
   set(moveit_resources_pr2_description_PREFIX ${moveit_resources_pr2_description_DEVEL_PREFIX})
 else()
   set(moveit_resources_pr2_description_SOURCE_PREFIX "")
   set(moveit_resources_pr2_description_DEVEL_PREFIX "")
-  set(moveit_resources_pr2_description_INSTALL_PREFIX /home/saul/catkin_ws/install)
+  set(moveit_resources_pr2_description_INSTALL_PREFIX /mnt/c/Users/saulo/catkin_ws/install)
   set(moveit_resources_pr2_description_PREFIX ${moveit_resources_pr2_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/saul/catkin_ws/install/lib;/home/saul/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /mnt/c/Users/saulo/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

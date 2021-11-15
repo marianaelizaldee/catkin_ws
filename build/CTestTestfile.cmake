@@ -1,10 +1,12 @@
 # CMake generated Testfile for 
-# Source directory: /home/saul/catkin_ws/src
-# Build directory: /home/saul/catkin_ws/build
+# Source directory: /mnt/c/Users/saulo/catkin_ws/src
+# Build directory: /mnt/c/Users/saulo/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("herramienta_terminal_v2_moveit_config")
+subdirs("human_v2_moveit_config")
 subdirs("moveit_resources/moveit_resources")
 subdirs("moveit_resources/fanuc_description")
 subdirs("moveit_resources/fanuc_moveit_config")
@@ -25,6 +27,9 @@ subdirs("universal_robot/ur_bringup")
 subdirs("universal_robot/ur_driver")
 subdirs("universal_robot/ur_e_gazebo")
 subdirs("universal_robot/ur_gazebo")
+subdirs("herramienta_terminal")
+subdirs("herramienta_terminal_v2")
+subdirs("human_v2")
 subdirs("moveit_resources/prbt_ikfast_manipulator_plugin")
 subdirs("universal_robot/ur10_e_moveit_config")
 subdirs("universal_robot/ur10_moveit_config")

@@ -1,4 +1,4 @@
-prefix=/home/saul/catkin_ws/devel
+prefix=/mnt/c/Users/saulo/catkin_ws/devel
 
 Name: ur3_e_moveit_config
 Description: Description of ur3_e_moveit_config

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/saul/catkin_ws/devel/lib/libprbt_manipulator_moveit_ikfast_plugin.pdb"
-  "/home/saul/catkin_ws/devel/lib/libprbt_manipulator_moveit_ikfast_plugin.so"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libprbt_manipulator_moveit_ikfast_plugin.pdb"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libprbt_manipulator_moveit_ikfast_plugin.so"
   "CMakeFiles/prbt_manipulator_moveit_ikfast_plugin.dir/src/prbt_manipulator_ikfast_moveit_plugin.cpp.o"
 )
 

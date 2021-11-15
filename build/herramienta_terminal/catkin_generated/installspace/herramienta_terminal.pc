@@ -1,0 +1,8 @@
+prefix=/mnt/c/Users/saulo/catkin_ws/install
+
+Name: herramienta_terminal
+Description: Description of herramienta_terminal
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

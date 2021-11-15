@@ -1,8 +1,8 @@
-# Install script for directory: /home/saul/catkin_ws/src/moveit_resources/prbt_pg70_support
+# Install script for directory: /mnt/c/Users/saulo/catkin_ws/src/moveit_resources/prbt_pg70_support
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/saul/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/saulo/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/saul/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_support.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_support.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support/cmake" TYPE FILE FILES
-    "/home/saul/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_supportConfig.cmake"
-    "/home/saul/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_supportConfig-version.cmake"
+    "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_supportConfig.cmake"
+    "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/prbt_pg70_support/catkin_generated/installspace/moveit_resources_prbt_pg70_supportConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE FILE FILES "/home/saul/catkin_ws/src/moveit_resources/prbt_pg70_support/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/prbt_pg70_support/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE DIRECTORY FILES "/home/saul/catkin_ws/src/moveit_resources/prbt_pg70_support/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/prbt_pg70_support/urdf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE DIRECTORY FILES "/home/saul/catkin_ws/src/moveit_resources/prbt_pg70_support/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_prbt_pg70_support" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/prbt_pg70_support/config")
 endif()
 

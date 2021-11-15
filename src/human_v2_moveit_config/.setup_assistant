@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: human_v2
+    relative_path: urdf/human_v2.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/human_v2.srdf
+  CONFIG:
+    author_name: yo mero
+    author_email: yo.mero@gmail.com
+    generated_timestamp: 1636259046

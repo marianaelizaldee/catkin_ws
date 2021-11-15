@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/saul/catkin_ws/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/saulo/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/saul/catkin_ws/build
+CMAKE_BINARY_DIR = /mnt/c/Users/saulo/catkin_ws/build
 
 # Utility rule file for _run_tests_ur_bringup.
 
@@ -63,10 +63,10 @@ universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/build: _run_test
 .PHONY : universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/build
 
 universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/clean:
-	cd /home/saul/catkin_ws/build/universal_robot/ur_bringup && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_ur_bringup.dir/cmake_clean.cmake
+	cd /mnt/c/Users/saulo/catkin_ws/build/universal_robot/ur_bringup && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_ur_bringup.dir/cmake_clean.cmake
 .PHONY : universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/clean
 
 universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/depend:
-	cd /home/saul/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/saul/catkin_ws/src /home/saul/catkin_ws/src/universal_robot/ur_bringup /home/saul/catkin_ws/build /home/saul/catkin_ws/build/universal_robot/ur_bringup /home/saul/catkin_ws/build/universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/saulo/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/saulo/catkin_ws/src /mnt/c/Users/saulo/catkin_ws/src/universal_robot/ur_bringup /mnt/c/Users/saulo/catkin_ws/build /mnt/c/Users/saulo/catkin_ws/build/universal_robot/ur_bringup /mnt/c/Users/saulo/catkin_ws/build/universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : universal_robot/ur_bringup/CMakeFiles/_run_tests_ur_bringup.dir/depend
 

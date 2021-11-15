@@ -1,8 +1,8 @@
-# Install script for directory: /home/saul/catkin_ws/src/moveit_resources/moveit_resources
+# Install script for directory: /mnt/c/Users/saulo/catkin_ws/src/moveit_resources/moveit_resources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/saul/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/saulo/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources" TYPE FILE FILES "/home/saul/catkin_ws/src/moveit_resources/moveit_resources/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/moveit_resources/package.xml")
 endif()
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/saul/catkin_ws/devel/lib/libur5_kin.pdb"
-  "/home/saul/catkin_ws/devel/lib/libur5_kin.so"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libur5_kin.pdb"
+  "/mnt/c/Users/saulo/catkin_ws/devel/lib/libur5_kin.so"
   "CMakeFiles/ur5_kin.dir/src/ur_kin.cpp.o"
 )
 

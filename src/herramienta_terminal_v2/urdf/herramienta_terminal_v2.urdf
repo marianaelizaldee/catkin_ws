@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="herramienta_terminal_v2">
+    <link name="base_link">
+        
+<inertial>
+            <origin
+        xyz="3.45283238980799E-07 0.0608715498291928 0.00123974822814294"
+        rpy="0 0 0"
+      />
+            <mass value="0.14135587182695" />
+            <inertia
+        ixx="0.000231183692827831"
+        ixy="-1.47768511900404E-10"
+        ixz="-5.1693909459257E-10"
+        iyy="0.000182244968064674"
+        iyz="7.87072289177524E-07"
+        izz="0.000272489357635986"
+      />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/base_link.STL"
+        />
+            </geometry>
+            <material name="">
+                <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1"
+        />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/base_link.STL"
+        />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Esfera_Link">
+        
+<inertial>
+            <origin
+        xyz="3.16537138127935E-09 -9.45873240842943E-12 -0.000343936657503437"
+        rpy="0 0 0"
+      />
+            <mass value="0.00284240218811015" />
+            <inertia
+        ixx="9.28692670688871E-08"
+        ixy="2.15880406786737E-17"
+        ixz="-6.12018167488118E-14"
+        iyy="9.28699156426048E-08"
+        iyz="1.46179252384844E-16"
+        izz="9.81451950551578E-08"
+      />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/Esfera_Link.STL"
+        />
+            </geometry>
+            <material name="">
+                <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1"
+        />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/Esfera_Link.STL"
+        />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Esfera_Joint" type="continuous">
+        <origin xyz="0 0.055497 0.053919" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="Esfera_Link" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <link name="Herramienta_Link">
+        
+<inertial>
+            <origin
+        xyz="7.77800235822682E-18 0.000126607760059315 0.0419859246974507"
+        rpy="0 0 0"
+      />
+            <mass value="0.0558305704742622" />
+            <inertia
+        ixx="1.70715758210215E-05"
+        ixy="1.8597762547717E-22"
+        ixz="3.27100641838021E-22"
+        iyy="1.72491853453059E-05"
+        iyz="-4.95795767449829E-08"
+        izz="1.83283512246861E-05"
+      />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/Herramienta_Link.STL"
+        />
+            </geometry>
+            <material name="">
+                <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1"
+        />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh
+          filename="package://herramienta_terminal_v2/meshes/Herramienta_Link.STL"
+        />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Herramienta_Joint" type="continuous">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="Esfera_Link" />
+        <child link="Herramienta_Link" />
+        <axis xyz="0 1 0" />
+    </joint>
+    
+<transmission name="trans_Esfera_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Esfera_Joint">
+            <hardwareInterface
+      >hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Esfera_Joint_motor">
+            <hardwareInterface
+      >hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Herramienta_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Herramienta_Joint">
+            <hardwareInterface
+      >hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Herramienta_Joint_motor">
+            <hardwareInterface
+      >hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>

@@ -1,0 +1,9 @@
+controller_list:
+  - name: fake_herramienta_controller
+    type: $(arg execution_type)
+    joints:
+      - Esfera_Joint
+      - Herramienta_Joint
+initial:  # Define initial robot poses.
+  - group: herramienta
+    pose: inicio
