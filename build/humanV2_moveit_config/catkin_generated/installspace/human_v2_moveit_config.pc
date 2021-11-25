@@ -1,8 +1,0 @@
-prefix=/mnt/c/Users/saulo/catkin_ws/install
-
-Name: human_v2_moveit_config
-Description: Description of human_v2_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

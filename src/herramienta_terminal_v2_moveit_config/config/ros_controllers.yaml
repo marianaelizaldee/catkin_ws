@@ -18,10 +18,21 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  - name: herramienta_controller
-    action_ns: follow_joint_trajectory
+  []
+herramienta_controller:
     default: True
-    type: FollowJointTrajectory
+    type: position_controllers/JointPositionController
     joints:
-      - Esfera_Joint
-      - Herramienta_Joint
+    - Esfera_Joint
+    - Herramienta _Joint
+    gains:
+      Esfera_Joint:
+        p: 100
+        d: 1
+        i: 1
+        i_clamp: 1
+      Herramienta_Joint:
+        p: 100
+        d: 1
+        i: 1
+        i_clamp: 1

@@ -1,0 +1,5 @@
+universal_robot/ur_bringup
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_bringup/cmake.lock /mnt/c/Users/saulo/catkin_ws/devel/./cmake.lock
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_bringup/lib/pkgconfig/ur_bringup.pc /mnt/c/Users/saulo/catkin_ws/devel/lib/pkgconfig/ur_bringup.pc
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_bringup/share/ur_bringup/cmake/ur_bringupConfig-version.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/ur_bringup/cmake/ur_bringupConfig-version.cmake
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_bringup/share/ur_bringup/cmake/ur_bringupConfig.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/ur_bringup/cmake/ur_bringupConfig.cmake

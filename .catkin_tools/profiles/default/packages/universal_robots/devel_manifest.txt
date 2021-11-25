@@ -1,0 +1,2 @@
+universal_robot/universal_robots
+/mnt/c/Users/saulo/catkin_ws/devel/.private/universal_robots/cmake.lock /mnt/c/Users/saulo/catkin_ws/devel/./cmake.lock

@@ -1,0 +1,12 @@
+universal_robot/ur_kinematics
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/cmake.lock /mnt/c/Users/saulo/catkin_ws/devel/./cmake.lock
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur10_kin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur10_kin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur10_moveit_plugin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur10_moveit_plugin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur3_kin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur3_kin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur3_moveit_plugin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur3_moveit_plugin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur5_kin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur5_kin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/libur5_moveit_plugin.so /mnt/c/Users/saulo/catkin_ws/devel/lib/libur5_moveit_plugin.so
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/pkgconfig/ur_kinematics.pc /mnt/c/Users/saulo/catkin_ws/devel/lib/pkgconfig/ur_kinematics.pc
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/lib/python3/dist-packages/ur_kinematics/__init__.py /mnt/c/Users/saulo/catkin_ws/devel/lib/python3/dist-packages/ur_kinematics/__init__.py
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig-version.cmake
+/mnt/c/Users/saulo/catkin_ws/devel/.private/ur_kinematics/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/ur_kinematics/cmake/ur_kinematicsConfig.cmake

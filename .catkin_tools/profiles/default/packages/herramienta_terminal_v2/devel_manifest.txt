@@ -1,0 +1,5 @@
+herramienta_terminal_v2
+/mnt/c/Users/saulo/catkin_ws/devel/.private/herramienta_terminal_v2/cmake.lock /mnt/c/Users/saulo/catkin_ws/devel/./cmake.lock
+/mnt/c/Users/saulo/catkin_ws/devel/.private/herramienta_terminal_v2/lib/pkgconfig/herramienta_terminal_v2.pc /mnt/c/Users/saulo/catkin_ws/devel/lib/pkgconfig/herramienta_terminal_v2.pc
+/mnt/c/Users/saulo/catkin_ws/devel/.private/herramienta_terminal_v2/share/herramienta_terminal_v2/cmake/herramienta_terminal_v2Config-version.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/herramienta_terminal_v2/cmake/herramienta_terminal_v2Config-version.cmake
+/mnt/c/Users/saulo/catkin_ws/devel/.private/herramienta_terminal_v2/share/herramienta_terminal_v2/cmake/herramienta_terminal_v2Config.cmake /mnt/c/Users/saulo/catkin_ws/devel/share/herramienta_terminal_v2/cmake/herramienta_terminal_v2Config.cmake

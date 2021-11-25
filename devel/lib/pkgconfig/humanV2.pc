@@ -1,8 +1,0 @@
-prefix=/mnt/c/Users/saulo/catkin_ws/devel
-
-Name: human_v2
-Description: Description of human_v2
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
