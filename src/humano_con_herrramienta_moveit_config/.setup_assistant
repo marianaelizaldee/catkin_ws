@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: humano_con_herramienta
+    relative_path: urdf/humano_con_herramienta.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/humano_con_herramienta.srdf
+  CONFIG:
+    author_name: yo
+    author_email: yo@yo.com
+    generated_timestamp: 1638760920

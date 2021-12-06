@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_Default_controller
+    type: $(arg execution_type)
+    joints:
+      - Hombro_Joint
+      - Brazo_Joint
+      - Antebrazo_Joint
+      - Esfera_Joint
+      - Herramienta_Joint
+initial:  # Define initial robot poses.
+#  - group: Default
+#    pose: home
+
+  []

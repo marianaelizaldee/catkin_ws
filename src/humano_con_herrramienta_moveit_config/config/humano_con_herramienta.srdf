@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="humano_con_herramienta">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="Default">
+        <joint name="virtual"/>
+        <joint name="Hombro_Joint"/>
+        <joint name="Brazo_Joint"/>
+        <joint name="Antebrazo_Joint"/>
+        <joint name="Esfera_Joint"/>
+        <joint name="Herramienta_Joint"/>
+    </group>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="virtual" type="fixed" parent_frame="World" child_link="Torso_link"/>
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="Antebrazo_Link" link2="Brazo_Link" reason="Adjacent"/>
+    <disable_collisions link1="Antebrazo_Link" link2="Esfera_Link" reason="Adjacent"/>
+    <disable_collisions link1="Antebrazo_Link" link2="Hombro_Link" reason="Never"/>
+    <disable_collisions link1="Brazo_Link" link2="Esfera_Link" reason="Never"/>
+    <disable_collisions link1="Brazo_Link" link2="Hombro_Link" reason="Adjacent"/>
+    <disable_collisions link1="Esfera_Link" link2="Herramienta_Link" reason="Adjacent"/>
+    <disable_collisions link1="Esfera_Link" link2="Hombro_Link" reason="Never"/>
+    <disable_collisions link1="Herramienta_Link" link2="Hombro_Link" reason="Never"/>
+    <disable_collisions link1="Hombro_Link" link2="Torso_link" reason="Adjacent"/>
+</robot>

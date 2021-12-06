@@ -1,0 +1,8 @@
+prefix=/mnt/c/Users/saulo/catkin_ws/install
+
+Name: humano_con_herramienta
+Description: Description of humano_con_herramienta
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

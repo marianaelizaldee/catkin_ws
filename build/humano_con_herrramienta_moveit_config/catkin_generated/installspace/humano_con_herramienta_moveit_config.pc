@@ -1,0 +1,8 @@
+prefix=/mnt/c/Users/saulo/catkin_ws/install
+
+Name: humano_con_herramienta_moveit_config
+Description: Description of humano_con_herramienta_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

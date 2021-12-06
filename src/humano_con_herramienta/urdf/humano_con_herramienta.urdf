@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="humano_con_herramienta">
+    <link name="Torso_link">
+        
+<inertial>
+            <origin xyz="-0.179701296927635 0.075 0.200188604102793" rpy="0 0 0" />
+            <mass value="21.1478222049488" />
+            <inertia ixx="0.31372452298567" ixy="-1.38841291837781E-17" ixz="-0.000756636466134756" iyy="0.498624765068563" iyz="-5.71260361670733E-10" izz="0.261892001804298" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Torso_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Torso_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Hombro_Link">
+        
+<inertial>
+            <origin xyz="0.0289339664438241 -3.35023981529181E-07 4.06333012514803E-07" rpy="0 0 0" />
+            <mass value="0.0392456846377238" />
+            <inertia ixx="2.56283643382997E-05" ixy="4.86132527241775E-10" ixz="-6.01688007095489E-10" iyy="3.3171230091628E-05" iyz="2.7055632847191E-08" izz="2.6396306627809E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Hombro_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Hombro_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Hombro_Joint" type="continuous">
+        <origin xyz="0 0.075 0.32" rpy="0 0 0" />
+        <parent link="Torso_link" />
+        <child link="Hombro_Link" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <link name="Brazo_Link">
+        
+<inertial>
+            <origin xyz="0.00737158621036889 -0.213541319529487 -0.000871954169548494" rpy="0 0 0" />
+            <mass value="2.06499804461819" />
+            <inertia ixx="0.0158159410581589" ixy="0.000502696481746206" ixz="1.81297551936055E-06" iyy="0.00216963354957945" iyz="-5.60827159115449E-05" izz="0.0159246259645358" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Brazo_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Brazo_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Brazo_Joint" type="continuous">
+        <origin xyz="0.0699999999999999 0 0" rpy="0 0 0" />
+        <parent link="Hombro_Link" />
+        <child link="Brazo_Link" />
+        <axis xyz="0 -0.00410265804584114 0.999991584063065" />
+    </joint>
+    <link name="Antebrazo_Link">
+        
+<inertial>
+            <origin xyz="0.054129942982022 -0.0920179998970292 -1.1538204673367E-05" rpy="0 0 0" />
+            <mass value="1.14948544644456" />
+            <inertia ixx="0.00777558725498917" ixy="0.000111699472038683" ixz="1.2752148655127E-06" iyy="0.000778644081476658" iyz="-7.15247621907364E-05" izz="0.00779338119888791" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Antebrazo_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Antebrazo_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Antebrazo_Joint" type="continuous">
+        <origin xyz="0.0435404858331481 -0.320923681320263 -0.00122016243606254" rpy="0 0 0" />
+        <parent link="Brazo_Link" />
+        <child link="Antebrazo_Link" />
+        <axis xyz="-0.999619507283765 -0.0274313315340041 -0.00289183471769717" />
+    </joint>
+    <link name="Esfera_Link">
+        
+<inertial>
+            <origin xyz="0.0095282708170579 0.000242526791625619 -0.000342316425138045" rpy="0 0 0" />
+            <mass value="0.00284240217600144" />
+            <inertia ixx="9.28692814490058E-08" ixy="-5.0515799403368E-13" ixz="-8.72666444419725E-12" iyy="9.28863150395005E-08" iyz="2.93677663521512E-10" izz="9.81287805975299E-08" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Esfera_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Esfera_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Esfera_Joint" type="continuous">
+        <origin xyz="0.0453264355830897 -0.148022941656319 0.0566647550735426" rpy="0 0 0" />
+        <parent link="Antebrazo_Link" />
+        <child link="Esfera_Link" />
+        <axis xyz="-0.99962297027782 -0.0274573185237648 -0.00011380875513051" />
+    </joint>
+    <link name="Herramienta_Link">
+        
+<inertial>
+            <origin xyz="0.00405972818628855 -0.0283963928750232 0.0441481223741427" rpy="0 0 0" />
+            <mass value="0.0558305704742621" />
+            <inertia ixx="1.70792791220477E-05" ixy="-3.01401059424095E-09" ixz="9.75812447479686E-08" iyy="1.72469745973279E-05" iyz="1.32403972255785E-08" izz="1.83228586716378E-05" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Herramienta_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://humano_con_herramienta/meshes/Herramienta_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Herramienta_Joint" type="continuous">
+        <origin xyz="0.00867793467178143 0.0312084850665503 -0.0023615668129347" rpy="0 0 0" />
+        <parent link="Esfera_Link" />
+        <child link="Herramienta_Link" />
+        <axis xyz="-0.0273690498770434 0.996724835023797 -0.0760955869654301" />
+    </joint>
+    
+<transmission name="trans_Hombro_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Hombro_Joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Hombro_Joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Brazo_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Brazo_Joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Brazo_Joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Antebrazo_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Antebrazo_Joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Antebrazo_Joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Esfera_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Esfera_Joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Esfera_Joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Herramienta_Joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Herramienta_Joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Herramienta_Joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
