@@ -56,6 +56,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/saulo/catkin_ws/build
 all: gtest/all
 all: herramienta_terminal_v2_moveit_config/all
 all: human_v2_moveit_config/all
+all: humano_con_herrramienta_moveit_config/all
 all: moveit_resources/moveit_resources/all
 all: moveit_resources/fanuc_description/all
 all: moveit_resources/fanuc_moveit_config/all
@@ -79,6 +80,7 @@ all: universal_robot/ur_gazebo/all
 all: herramienta_terminal/all
 all: herramienta_terminal_v2/all
 all: human_v2/all
+all: humano_con_herramienta/all
 all: moveit_resources/prbt_ikfast_manipulator_plugin/all
 all: universal_robot/ur10_e_moveit_config/all
 all: universal_robot/ur10_moveit_config/all
@@ -94,6 +96,7 @@ all: universal_robot/ur_kinematics/all
 preinstall: gtest/preinstall
 preinstall: herramienta_terminal_v2_moveit_config/preinstall
 preinstall: human_v2_moveit_config/preinstall
+preinstall: humano_con_herrramienta_moveit_config/preinstall
 preinstall: moveit_resources/moveit_resources/preinstall
 preinstall: moveit_resources/fanuc_description/preinstall
 preinstall: moveit_resources/fanuc_moveit_config/preinstall
@@ -117,6 +120,7 @@ preinstall: universal_robot/ur_gazebo/preinstall
 preinstall: herramienta_terminal/preinstall
 preinstall: herramienta_terminal_v2/preinstall
 preinstall: human_v2/preinstall
+preinstall: humano_con_herramienta/preinstall
 preinstall: moveit_resources/prbt_ikfast_manipulator_plugin/preinstall
 preinstall: universal_robot/ur10_e_moveit_config/preinstall
 preinstall: universal_robot/ur10_moveit_config/preinstall
@@ -137,6 +141,7 @@ clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: herramienta_terminal_v2_moveit_config/clean
 clean: human_v2_moveit_config/clean
+clean: humano_con_herrramienta_moveit_config/clean
 clean: moveit_resources/moveit_resources/clean
 clean: moveit_resources/fanuc_description/clean
 clean: moveit_resources/fanuc_moveit_config/clean
@@ -160,6 +165,7 @@ clean: universal_robot/ur_gazebo/clean
 clean: herramienta_terminal/clean
 clean: herramienta_terminal_v2/clean
 clean: human_v2/clean
+clean: humano_con_herramienta/clean
 clean: moveit_resources/prbt_ikfast_manipulator_plugin/clean
 clean: universal_robot/ur10_e_moveit_config/clean
 clean: universal_robot/ur10_moveit_config/clean
@@ -317,6 +323,42 @@ human_v2_moveit_config/preinstall:
 human_v2_moveit_config/clean:
 
 .PHONY : human_v2_moveit_config/clean
+
+#=============================================================================
+# Directory level rules for directory humano_con_herramienta
+
+# Recursive "all" directory target.
+humano_con_herramienta/all:
+
+.PHONY : humano_con_herramienta/all
+
+# Recursive "preinstall" directory target.
+humano_con_herramienta/preinstall:
+
+.PHONY : humano_con_herramienta/preinstall
+
+# Recursive "clean" directory target.
+humano_con_herramienta/clean:
+
+.PHONY : humano_con_herramienta/clean
+
+#=============================================================================
+# Directory level rules for directory humano_con_herrramienta_moveit_config
+
+# Recursive "all" directory target.
+humano_con_herrramienta_moveit_config/all:
+
+.PHONY : humano_con_herrramienta_moveit_config/all
+
+# Recursive "preinstall" directory target.
+humano_con_herrramienta_moveit_config/preinstall:
+
+.PHONY : humano_con_herrramienta_moveit_config/preinstall
+
+# Recursive "clean" directory target.
+humano_con_herrramienta_moveit_config/clean:
+
+.PHONY : humano_con_herrramienta_moveit_config/clean
 
 #=============================================================================
 # Directory level rules for directory moveit_resources/fanuc_description
