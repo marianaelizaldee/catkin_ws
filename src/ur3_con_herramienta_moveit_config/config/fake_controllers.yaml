@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_robot_controller
+    type: $(arg execution_type)
+    joints:
+      - shoulder1_joint
+      - shoulder2_joint
+      - shoulder3_joint
+      - shoulder4_joint
+      - shoulder5_joint
+      - terminal_joint
+initial:  # Define initial robot poses.
+#  - group: robot
+#    pose: home
+
+  []

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="ur3_con_herramienta">
+    <link name="base_link">
+        
+<inertial>
+            <origin xyz="2.64101237535564E-18 9.76134315465968E-18 0.0475762493981301" rpy="0 0 0" />
+            <mass value="2.65145043916468" />
+            <inertia ixx="0.00437179269564763" ixy="8.43844902541496E-36" ixz="7.22535036455934E-22" iyy="0.00437179269564763" iyz="3.8594564342667E-19" izz="0.00438480872973141" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="shoulder1_link">
+        
+<inertial>
+            <origin xyz="0.00514792403286268 0.0637458415037934 -2.32179009735116E-07" rpy="0 0 0" />
+            <mass value="0.800701358529581" />
+            <inertia ixx="0.00131487870842272" ixy="-1.72221420403911E-05" ixz="1.37252271850374E-08" iyy="0.000954968358643356" iyz="9.79847131675004E-10" izz="0.00141534841474555" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder1_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder1_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="shoulder1_joint" type="continuous">
+        <origin xyz="0 0 0.1058" rpy="1.5707963267949 0 0.0183849589678351" />
+        <parent link="base_link" />
+        <child link="shoulder1_link" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <link name="shoulder2_Link">
+        
+<inertial>
+            <origin xyz="0.113689711007059 0.064919758897963 1.27017223079673E-07" rpy="0 0 0" />
+            <mass value="2.79610549136134" />
+            <inertia ixx="0.00280381546638843" ixy="-1.27251874671282E-05" ixz="-1.48095522566757E-08" iyy="0.00503444592371733" iyz="-2.55986839461686E-09" izz="0.00570902082553899" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder2_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder2_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="shoulder2_joint" type="continuous">
+        <origin xyz="0.0553388892120295 0.066 0" rpy="-3.14159265358971 0.0185718779793312 1.5707963267949" />
+        <parent link="shoulder1_link" />
+        <child link="shoulder2_Link" />
+        <axis xyz="0 1 0" />
+    </joint>
+    <link name="shoulder3_Link">
+        
+<inertial>
+            <origin xyz="0.0372493474620883 -0.115733396945102 1.39835810795269E-08" rpy="0 0 0" />
+            <mass value="1.54172457038253" />
+            <inertia ixx="0.0021915651639715" ixy="5.89418525085992E-05" ixz="-5.21035861445639E-10" iyy="0.00089862926269953" iyz="-3.81373846770823E-09" izz="0.00231411869604767" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder3_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder3_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="shoulder3_joint" type="continuous">
+        <origin xyz="0.255 0 0" rpy="3.14084122794701 0 -1.5707963267949" />
+        <parent link="shoulder2_Link" />
+        <child link="shoulder3_Link" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <link name="shoulder4_Link">
+        
+<inertial>
+            <origin xyz="0.00569315040516876 0.00260315148511425 0.035957041854072" rpy="0 0 0" />
+            <mass value="0.30365252171567" />
+            <inertia ixx="0.000280146121518899" ixy="-2.01684005428714E-07" ixz="-3.40077770509167E-06" iyy="0.000191315923778503" iyz="-1.27200706541371E-06" izz="0.000259233118901331" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder4_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0 0.725490196078431 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder4_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="shoulder4_joint" type="continuous">
+        <origin xyz="-0.00376999800768517 -0.2245 0" rpy="-3.02811430920995 -1.4127718869458 3.02951635397989" />
+        <parent link="shoulder3_Link" />
+        <child link="shoulder4_Link" />
+        <axis xyz="0.156380249592865 0 0.987696925953135" />
+    </joint>
+    <link name="shoulder5_Link">
+        
+<inertial>
+            <origin xyz="-0.0391252197015427 -0.0018428909930804 7.9941491811647E-09" rpy="0 0 0" />
+            <mass value="0.333185460218424" />
+            <inertia ixx="0.000330241453545441" ixy="-4.05903181066887E-06" ixz="3.42280898184591E-09" iyy="0.000207362986969204" iyz="-1.03514483361373E-10" izz="0.00035268676518792" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder5_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/shoulder5_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="shoulder5_joint" type="continuous">
+        <origin xyz="0.00631637229775837 -0.0407409448596764 0.0398941779289388" rpy="-1.39538662615873 0 1.5707963267949" />
+        <parent link="shoulder4_Link" />
+        <child link="shoulder5_Link" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <link name="terminal_Link">
+        
+<inertial>
+            <origin xyz="0.0130784500708882 -0.128519755952518 0.0737931769663437" rpy="0 0 0" />
+            <mass value="0.357795123477692" />
+            <inertia ixx="0.000127210617140741" ixy="-8.65220958236335E-09" ixz="8.89368379102214E-06" iyy="0.00012581198880417" iyz="-4.88187842902285E-08" izz="0.000175815645279782" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/terminal_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.894117647058823 0.913725490196078 0.929411764705882 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/terminal_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="terminal_joint" type="continuous">
+        <origin xyz="0.0857409448596783 0 0" rpy="0 1.39538662615873 -1.5707963267949" />
+        <parent link="shoulder5_Link" />
+        <child link="terminal_Link" />
+        <axis xyz="0.174511566059324 0 0.984655124046751" />
+    </joint>
+    <link name="ball_Link">
+        
+<inertial>
+            <origin xyz="0.00899999470000001 -3.19390675365683E-09 -0.000343936792167598" rpy="0 0 0" />
+            <mass value="0.00284240213484782" />
+            <inertia ixx="9.28699159227044E-08" ixy="3.23116958049918E-24" ixz="-1.00145846375795E-23" iyy="9.2869262729827E-08" iyz="6.1589008193398E-14" izz="9.81451961419863E-08" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/ball_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/ball_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="ball_joint" type="continuous">
+        <origin xyz="0.0247806423804241 -0.1195000053 0.139821027614638" rpy="2.96618295295362 0 -1.5707963267949" />
+        <parent link="terminal_Link" />
+        <child link="ball_Link" />
+        <axis xyz="1 0 0" />
+    </joint>
+    <link name="munequera_Link">
+        
+<inertial>
+            <origin xyz="0.00437746240803183 -0.0526049977106585 3.45283238901636E-07" rpy="0 0 0" />
+            <mass value="0.14135587182695" />
+            <inertia ixx="0.000182244968064674" ixy="7.87072289176979E-07" ixz="-1.47768511671227E-10" iyy="0.000272489357635988" iyz="-5.16939094253985E-10" izz="0.000231183692827832" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/munequera_Link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://ur3_con_herramienta/meshes/munequera_Link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="munequera_joint" type="continuous">
+        <origin xyz="0.01 0 0" rpy="1.5707963267949 -0.0746207149434425 0" />
+        <parent link="ball_Link" />
+        <child link="munequera_Link" />
+        <axis xyz="0 0 1" />
+    </joint>
+    
+<transmission name="trans_shoulder1_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder1_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder1_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_shoulder2_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder2_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder2_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_shoulder3_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder3_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder3_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_shoulder4_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder4_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder4_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_shoulder5_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="shoulder5_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="shoulder5_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_terminal_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="terminal_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="terminal_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_ball_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="ball_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="ball_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_munequera_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="munequera_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="munequera_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
