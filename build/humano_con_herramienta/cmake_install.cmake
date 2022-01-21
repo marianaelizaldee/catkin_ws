@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta
+# Install script for directory: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/saulo/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramienta.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramienta.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/cmake" TYPE FILE FILES
-    "/mnt/c/Users/saulo/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramientaConfig.cmake"
-    "/mnt/c/Users/saulo/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramientaConfig-version.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramientaConfig.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/humano_con_herramienta/catkin_generated/installspace/humano_con_herramientaConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/config" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/config" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/launch" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/launch" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/meshes" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta/meshes/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/meshes" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta/meshes/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/urdf" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/humano_con_herramienta/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/humano_con_herramienta/urdf" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/humano_con_herramienta/urdf/")
 endif()
 

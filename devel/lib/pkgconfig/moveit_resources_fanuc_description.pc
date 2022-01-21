@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/saulo/catkin_ws/devel
+prefix=/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel
 
 Name: moveit_resources_fanuc_description
 Description: Description of moveit_resources_fanuc_description

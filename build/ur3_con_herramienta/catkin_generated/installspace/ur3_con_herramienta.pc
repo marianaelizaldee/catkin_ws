@@ -1,0 +1,8 @@
+prefix=/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install
+
+Name: ur3_con_herramienta
+Description: Description of ur3_con_herramienta
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

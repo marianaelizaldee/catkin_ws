@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_robotcito_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - shoulder1_joint
+      - shoulder2_joint
+      - shoulder3_joint
+      - shoulder4_joint
+      - shoulder5_joint
+      - terminal_joint
+initial:  # Define initial robot poses per group
+  - group: robotcito
+    pose: random1

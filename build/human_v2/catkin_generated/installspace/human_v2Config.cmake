@@ -67,14 +67,14 @@ set(human_v2_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(human_v2_SOURCE_PREFIX /mnt/c/Users/saulo/catkin_ws/src/human_v2)
-  set(human_v2_DEVEL_PREFIX /mnt/c/Users/saulo/catkin_ws/devel)
+  set(human_v2_SOURCE_PREFIX /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/human_v2)
+  set(human_v2_DEVEL_PREFIX /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel)
   set(human_v2_INSTALL_PREFIX "")
   set(human_v2_PREFIX ${human_v2_DEVEL_PREFIX})
 else()
   set(human_v2_SOURCE_PREFIX "")
   set(human_v2_DEVEL_PREFIX "")
-  set(human_v2_INSTALL_PREFIX /mnt/c/Users/saulo/catkin_ws/install)
+  set(human_v2_INSTALL_PREFIX /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install)
   set(human_v2_PREFIX ${human_v2_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/c/Users/saulo/catkin_ws/install/lib;/mnt/c/Users/saulo/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

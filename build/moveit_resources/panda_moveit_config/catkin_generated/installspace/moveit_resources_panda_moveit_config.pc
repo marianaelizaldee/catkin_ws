@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/saulo/catkin_ws/install
+prefix=/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install
 
 Name: moveit_resources_panda_moveit_config
 Description: Description of moveit_resources_panda_moveit_config

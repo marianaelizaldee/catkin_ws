@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /mnt/c/Users/saulo/catkin_ws/src/universal_robot/ur_driver
-# Build directory: /mnt/c/Users/saulo/catkin_ws/build/universal_robot/ur_driver
+# Source directory: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/universal_robot/ur_driver
+# Build directory: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/universal_robot/ur_driver
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

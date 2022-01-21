@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<robot name="ur3">
+     <link name="world"/>
+     <link name="base">
+         <visual>
+             <geometry>
+                 <cylinder length="0.20" radius="0.2"/>
+             </geometry>
+             <material name="metal">
+                 <color rgba="0.75 0.75 0.75 1"/>
+             </material>
+             <origin rpy="0 0 0" xyz="0 0 0.025"/>
+         </visual>
+     </link>
+     <joint name="union_base" type="fixed">
+         <parent link="world"/>
+         <child link="base"/>
+     </joint>
+     <link name="eje1">
+                 <visual>
+                         <geometry>
+                            <cylinder length="0.5" radius="0.15"/>
+                         </geometry>
+                 <origin rpy="0 0 0" xyz="0 0 0.25"/>
+                 <material name="blue">
+                     <color rgba="0 0 0.8 1"/>
+                 </material>
+                 </visual>
+         </link>
+        <joint name="eje1" type="continuous">
+                     <axis xyz="0 0 1"/>
+             <parent link="base"/>
+             <child link="eje1"/>
+             <origin rpy="0 0 0" xyz="0 0 0.05"/>
+         </joint>
+        <link name="eje2">
+                     <visual>
+                             <geometry> 
+                                 <cylinder length="0.35" radius="0.15"/>
+                             </geometry>
+                     <origin rpy="0 0 0" xyz="0 0 0.15"/>
+                     <material name="metal">
+                         <color rgba="0.75 0.75 0.75 1"/>
+                     </material>
+                     </visual>
+         </link>
+         <joint name="eje2" type="continuous">
+                     <axis xyz="0 0 1"/>
+             <parent link="eje1"/>
+             <child link="eje2"/>
+             <origin rpy="0 1.5708 0" xyz="0.15 0 0.35"/>
+         </joint>
+         <link name="brazo2">
+             <visual>
+                  <geometry>
+                      <cylinder length="0.70" radius="0.15"/>
+                 </geometry>
+                 <material name="metal">
+                     <color rgba="0.75 0.75 0.75 1"/>
+                 </material>
+                 <origin rpy="0 1.5708 0" xyz="-0.40 0 0.15"/>
+             </visual>
+         </link>
+         <joint name="ejeBrazo2" type="fixed">
+             <parent link="eje2"/>
+             <child link="brazo2"/>
+         </joint>
+         <link name="eje3">
+             <visual>
+                 <geometry>
+                     <cylinder length="0.45" radius="0.15"/>
+                 </geometry>
+                 <material name="blue">
+                     <color rgba="0 0 0.8 1"/>
+                 </material>
+                <origin rpy="0 0 0" xyz="0 0 0"/>
+            </visual>
+         </link>
+         <joint name="eje3" type="continuous">
+                 <axis xyz="0 0 1"/>
+             <parent link="brazo2"/>
+             <child link="eje3"/>
+             <origin rpy="0 0 0" xyz="-0.55 0 -0.1"/>
+          </joint>
+         <link name="brazo3">
+             <visual>
+                 <geometry>
+                     <cylinder length="0.70" radius="0.13"/>
+                 </geometry>
+                 <material name="blue">
+                     <color rgba="0 0 0.8 1"/>
+                 </material>
+                 <origin rpy="0 1.5708 0" xyz="-0.30 0 -0.05"/>
+             </visual>
+         </link>
+         <joint name="brazoeje3" type="fixed">
+             <parent link="eje3"/>
+             <child link="brazo3"/>
+         </joint>
+         <link name="eje4">
+             <visual>
+                 <geometry>
+                     <cylinder length="0.45" radius="0.10"/>
+                 </geometry>
+                 <material name="metal">
+                     <color rgba="0.75 0.75 0.75 1"/>
+                 </material>
+                 <origin rpy="0 0 0" xyz="0 0 0"/>
+             </visual>
+         </link>
+         <joint name="eje4" type="continuous">
+                     <axis xyz="0 0 1"/>
+             <parent link="brazo3"/>
+             <child link="eje4"/>
+            <origin rpy="0 0 0" xyz="-0.55 0 0.1"/>
+         </joint>
+         <link name="eje5">
+             <visual>
+                 <geometry>
+                     <cylinder length="0.30" radius="0.10"/>
+                 </geometry>
+                 <material name="metal">
+                     <color rgba="0.75 0.75 0.75 1"/>
+                 </material>
+                 <origin rpy="0 0 0" xyz="0 0 0"/>
+             </visual>
+         </link>
+         <joint name="eje5" type="continuous">
+                     <axis xyz="0 0 1"/>
+             <parent link="eje4"/>
+             <child link="eje5"/>
+             <origin rpy="0 1.5708 0" xyz="-0.15 0 0.1"/>
+         </joint>
+         <link name="eje6">
+             <visual>
+                 <geometry>
+                     <cylinder length="0.30" radius="0.08"/>
+                 </geometry>
+                 <material name="blue">
+                     <color rgba="0 0 0.8 1"/>
+                 </material>
+                 <origin rpy="0 0 0" xyz="0 0 0"/>
+             </visual>
+         </link>
+         <joint name="eje6" type="continuous">
+                     <axis xyz="0 0 1"/>
+             <parent link="eje5"/>
+             <child link="eje6"/>
+            <origin rpy="0 1.5708 0" xyz="-0.08 0 -0.05"/>
+         </joint>
+ </robot>

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/mnt/c/Users/saulo/catkin_ws/devel/include/ur_driver/URDriverConfig.h"
-  "/mnt/c/Users/saulo/catkin_ws/devel/lib/python3/dist-packages/ur_driver/cfg/URDriverConfig.py"
-  "/mnt/c/Users/saulo/catkin_ws/devel/share/ur_driver/docs/URDriverConfig-usage.dox"
-  "/mnt/c/Users/saulo/catkin_ws/devel/share/ur_driver/docs/URDriverConfig.dox"
-  "/mnt/c/Users/saulo/catkin_ws/devel/share/ur_driver/docs/URDriverConfig.wikidoc"
+  "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/include/ur_driver/URDriverConfig.h"
+  "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/lib/python3/dist-packages/ur_driver/cfg/URDriverConfig.py"
+  "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/share/ur_driver/docs/URDriverConfig-usage.dox"
+  "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/share/ur_driver/docs/URDriverConfig.dox"
+  "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/share/ur_driver/docs/URDriverConfig.wikidoc"
   "CMakeFiles/ur_driver_gencfg"
 )
 

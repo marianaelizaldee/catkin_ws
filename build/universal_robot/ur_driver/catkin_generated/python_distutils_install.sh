@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/mnt/c/Users/saulo/catkin_ws/src/universal_robot/ur_driver"
+echo_and_run cd "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/universal_robot/ur_driver"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/mnt/c/Users/saulo/catkin_ws/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/mnt/c/Users/saulo/catkin_ws/install/lib/python3/dist-packages:/mnt/c/Users/saulo/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/mnt/c/Users/saulo/catkin_ws/build" \
+    PYTHONPATH="/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install/lib/python3/dist-packages:/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build" \
     "/usr/bin/python3" \
-    "/mnt/c/Users/saulo/catkin_ws/src/universal_robot/ur_driver/setup.py" \
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/universal_robot/ur_driver/setup.py" \
      \
-    build --build-base "/mnt/c/Users/saulo/catkin_ws/build/universal_robot/ur_driver" \
+    build --build-base "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/universal_robot/ur_driver" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/mnt/c/Users/saulo/catkin_ws/install" --install-scripts="/mnt/c/Users/saulo/catkin_ws/install/bin"
+    --install-layout=deb --prefix="/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install" --install-scripts="/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install/bin"

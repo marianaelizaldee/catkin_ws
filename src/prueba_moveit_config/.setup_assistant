@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ""
+    relative_path: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/prueba/ur3.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/ur3.srdf
+  CONFIG:
+    author_name: maria
+    author_email: mariana.elizalde@udem.edu
+    generated_timestamp: 1642763005

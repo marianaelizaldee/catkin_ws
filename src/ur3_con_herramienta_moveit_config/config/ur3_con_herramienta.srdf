@@ -25,6 +25,8 @@
         <joint name="terminal_joint"/>
         <chain base_link="base_link" tip_link="terminal_Link"/>
     </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="endeffector_herramienta" parent_link="terminal_Link" group="robot" parent_group="robot"/>
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="ball_joint"/>
     <passive_joint name="munequera_joint"/>

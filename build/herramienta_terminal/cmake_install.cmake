@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal
+# Install script for directory: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/saulo/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminal.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminal.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/cmake" TYPE FILE FILES
-    "/mnt/c/Users/saulo/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminalConfig.cmake"
-    "/mnt/c/Users/saulo/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminalConfig-version.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminalConfig.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/herramienta_terminal/catkin_generated/installspace/herramienta_terminalConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/config" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/config" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/launch" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/launch" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/meshes" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal/meshes/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/meshes" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal/meshes/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/urdf" TYPE DIRECTORY FILES "/mnt/c/Users/saulo/catkin_ws/src/herramienta_terminal/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/herramienta_terminal/urdf" TYPE DIRECTORY FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/herramienta_terminal/urdf/")
 endif()
 

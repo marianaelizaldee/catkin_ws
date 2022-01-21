@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/saulo/catkin_ws/install
+prefix=/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install
 
 Name: ur5_moveit_config
 Description: Description of ur5_moveit_config

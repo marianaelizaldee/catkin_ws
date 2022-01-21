@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<robot name="ur3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+      <!-- world -->
+     <link name="world"/>
+
+     <!-- pedestal  -->
+     <link name="pedestal_link">
+         <visual>
+             <origin xyz="0 0 0.35"/>
+             <geometry>
+                 <box size="0.3 0.3 0.7"/>
+             </geometry>
+             <material name="pedestal_color">
+                 <color rgba="0.75 0.75 0.75 1"/>
+             </material>
+         </visual>
+
+         <collision>
+             <origin xyz="0 0 0.35"/>
+             <geometry>
+                 <box size="0.3 0.3 0.7"/>
+              </geometry>
+         </collision>
+
+         <inertial>
+             <mass value="500"/>
+             <origin xyz="0 0 0" rpy="0 0 0"/>
+             <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+         </inertial>
+     </link>
+
+     <!-- Robot -->
+     <xacro:include filename="$(find ur_description)/urdf/ur3.urdf.xacro"/>
+     <xacro:ur3_robot prefix="robot_" joint_limited="true"/>
+     
+     <!-- End Effector -->
+     <!--<xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f.xacro"/>
+     <xacro:robotiq_arg2f_base_link prefix="gripper_"/>-->
+
+     <!-- Joints -->
+     <!-- Pedestal al mundo. -->
+     <joint name="world_to_pedestal" type="fixed">
+         <parent link="world" />
+         <child link="pedestal_link" />
+          <origin xyz="-0.35 -0.4 0.0" rpy="0.0 0.0 0.0"/>
+     </joint>
+
+     <!-- Robot al pedestal. -->
+     <joint name="pedestal_to_robot" type="fixed">
+         <parent link="pedestal_link" />
+         <child link="robot_base_link" />
+         <origin xyz="0 0 0.7" rpy="0 0 0" />
+     </joint>
+
+     <!-- End Effector al Robot. -->
+     <!--<joint name="gripper_to_robot" type="fixed">
+         <parent link="robot_tool0" />
+         <child link="gripper_robotiq_arg2f_base_link" />
+     </joint>-->
+ </robot>

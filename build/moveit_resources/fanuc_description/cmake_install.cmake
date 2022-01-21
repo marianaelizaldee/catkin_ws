@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/saulo/catkin_ws/src/moveit_resources/fanuc_description
+# Install script for directory: /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/moveit_resources/fanuc_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/saulo/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,24 +38,24 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_fanuc_description/cmake" TYPE FILE FILES
-    "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_descriptionConfig.cmake"
-    "/mnt/c/Users/saulo/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_descriptionConfig-version.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_descriptionConfig.cmake"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/build/moveit_resources/fanuc_description/catkin_generated/installspace/moveit_resources_fanuc_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_fanuc_description" TYPE FILE FILES "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/fanuc_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_fanuc_description" TYPE FILE FILES "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/moveit_resources/fanuc_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/moveit_resources_fanuc_description" TYPE DIRECTORY FILES
-    "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/fanuc_description/meshes"
-    "/mnt/c/Users/saulo/catkin_ws/src/moveit_resources/fanuc_description/urdf"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/moveit_resources/fanuc_description/meshes"
+    "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/src/moveit_resources/fanuc_description/urdf"
     )
 endif()
 

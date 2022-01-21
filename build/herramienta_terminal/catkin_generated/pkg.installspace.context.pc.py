@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "herramienta_terminal"
-PROJECT_SPACE_DIR = "/mnt/c/Users/saulo/catkin_ws/install"
+PROJECT_SPACE_DIR = "/mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/install"
 PROJECT_VERSION = "1.0.0"

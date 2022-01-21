@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libur5_kin.so -o /mnt/c/Users/saulo/catkin_ws/devel/lib/libur5_kin.so CMakeFiles/ur5_kin.dir/src/ur_kin.cpp.o 
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libur5_kin.so -o /mnt/c/Users/maria/OneDrive/Documentos/GitHub/catkin_ws/devel/lib/libur5_kin.so CMakeFiles/ur5_kin.dir/src/ur_kin.cpp.o 
